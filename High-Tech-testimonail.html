@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighTech-IT Testimonail</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .dropdown1 {
+            transition: all s;
+        }
+
+        .dropdown1:hover .dropdown2 {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="Oswald">
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+    <!-- header -->
+    <section>
+        <div class=" hidden md:bg-black md:flex justify-between items-center md:px-16 md:py-2">
+            <div class="flex gap-x-6">
+                <div class="flex">
+                    <div class="text-green-600 cursor-pointer"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text-gray-400">
+                        <p>23 Ranking Street, New York</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="text-green-600 cursor-pointer"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text-gray-400">
+                        <p>Email@Example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <div class="h-8 w-8 bg-white rounded-full text-xl text-blue-800 text-center cursor-pointer">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="h-8 w-8 bg-white rounded-full text-xl text-blue-800 text-center cursor-pointer">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="h-8 w-8 bg-white rounded-full text-xl text-blue-800 text-center cursor-pointer">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="h-8 w-8 bg-white rounded-full text-xl text-blue-800 text-center cursor-pointer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <!-- arrow div -->
+            <div
+                class="w-12 h-12 rounded-full bg-green-400 text-white flex justify-center items-center fixed bottom-10 right-10 ">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+        </div>
+        <header class="bg-blue-800">
+            <nav aria-label="Global"
+                class="flex items-center justify-center ml-0 gap-x-50 md:gap-x-100 lg:gap-x-14 p-3  md:ml-20">
+                <div class="flex lg:flex-1 cursor-pointer">
+                    <h1 class="text-white text-4xl font-extrabold">High<span class="text-green-600">Tech</span>
+                    </h1>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" command="show-modal" commandfor="mobile-menu"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-6 font-awesome">
+                    <a href="High-Tech-ItSolution.html" class="text-lg text-white hover:text-green-600">Home</a>
+                    <a href="High-Tech-About.html" class="text-lg text-white hover:text-green-600">About</a>
+                    <a href="High-Tech-Services.html" class="text-lg text-white hover:text-green-600">Services</a>
+                    <a href="High-Tech-Project.html" class="text-lg text-white hover:text-green-600">Projects</a>
+
+                    <!-- old dropdown -->
+                    <!-- <li class="group  text-lg text-white hover:text-green-600 list-none">Pages
+                        <ul
+                            class="bg-white rounded-md text-black absolute pr-8 pb-3 pl-3 hidden z-1 group-hover:block hover:block">
+                            <li ><a href="High-Tech-Blog.html" class="group-hover:d-block">Our Blog</a></li>
+                            <li><a href="High-Tech-Team.html" class="group-hover:d-block">Our Team</a></li>
+                            <li><a href="High-Tech-testimonail.html" class="group-hover:d-block">Testimonail</a></li>
+                            <li><a href="" class="group-hover:d-block">404 Pages</a></li>
+                        </ul>
+                    </li> -->
+
+                    <li class="relative group text-lg text-white list-none">
+                        <span class="cursor-pointer hover:text-green-600 group-visited:text-green-600">Pages</span>
+
+                        <ul
+                            class="absolute left-0  bg-white rounded-md text-black pr-8 pb-3 pl-3 hidden group-hover:block hover:block z-10">
+                            <li><a href="High-Tech-Blog.html" class="block py-1 hover:text-green-600">Our Blog</a></li>
+                            <li><a href="High-Tech-Team.html" class="block py-1 hover:text-green-600">Our Team</a></li>
+                            <li><a href="High-Tech-testimonail.html"
+                                    class="group block py-1 hover:text-green-600">Testimonial</a></li>
+                            <li><a href="#" class="block py-1 hover:text-green-600">404 Pages</a></li>
+                        </ul>
+                    </li>
+
+                    <a href="High-Tech-Contact.html" class="text-lg text-white hover:text-green-600">Contact</a>
+                </div>
+                <div class="hidden lg:flex">
+                    <div class="text-3xl text-white cursor-pointer"><i class="fa-solid fa-phone"></i></div>
+                    <div class="flex flex-col ml-4">
+                        <span class="text-white-50">Have any questions?</span>
+                        <span class="text-green-600">Call: + 0123 456 7890</span>
+                    </div>
+                </div>
+                <div
+                    class="hidden text-white text-4xl border-l-2 lg:flex lg:flex-1 lg:justify-between lg:pl-4 cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+            <el-dialog>
+                <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                    <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                        <el-dialog-panel
+                            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-blue-800 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                            <div class="flex items-center justify-between">
+                                <div class="flex lg:flex-1">
+                                    <h1 class="text-white text-3xl font-bold">High
+                                        <span class="text-green-600">Tech</span>
+                                    </h1>
+                                </div>
+                                <button type="button" command="close" commandfor="mobile-menu"
+                                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                    <span class="sr-only">Close menu</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6">
+                                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-6 flow-root">
+                                <div class="-my-6 divide-y divide-white/10">
+                                    <div class="space-y-2 py-6">
+                                        <a href="High-Tech-ItSolution.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Home</a>
+                                        <a href="High-Tech-About.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About</a>
+                                        <a href="High-Tech-Services.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Services</a>
+
+                                        <li
+                                            class="group -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">
+                                            Pages
+                                            <div
+                                                class="bg-white rounded-md text-black absolute top-0 left-1 pr-8 p-3 z-1 hidden group-hover:d-block hover:d-block">
+                                                <a href="High-Tech-Blog.html">Our Blog</a>
+                                                <a href="High-Tech-Team.html">Our Team</a>
+                                                <a href="High-Tech-testimonail.html">Testimonail</a>
+                                                <a href="">404 Pages</a>
+                                            </div>
+                                        </li>
+                                        <a href="High-Tech-Contact.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </el-dialog-panel>
+                    </div>
+                </dialog>
+            </el-dialog>
+        </header>
+    </section>
+    <!-- Background Image -->
+    <section class="">
+        <div
+            class="bg-[url(https://themewagon.github.io/HighTechIT/img/carousel-1.jpg)] bg-cover bg-center w-full h-auto text-center flex flex-col justify-center items-center gap-10 relative">
+            <div
+                class="w-full flex flex-col justify-center items-center z-1 md:gap-y-10 py-20 lg:py-34 lg:w-5xl lg:gap-x-6">
+                <h1 class="text-5xl text-white px-20 font-bold lg:text-7xl" data-aos="fade-down"
+                    data-aos-duration="2000" data-aos-delay="400">Testimonial
+                </h1>
+                <ol class="text-white flex gap-3 text-xl mt-10">
+                    <li class="cursor-pointer">Home</li>/
+                    <li class="cursor-pointer">Page</li>/
+                    <li>Testimonial</li>
+                </ol>
+            </div>
+            <div class="bg-black w-full h-full absolute top-0 opacity-50"></div>
+        </div>
+        <div
+            class="bg-[#26d48c] flex flex-wrap justify-between items-center gap-2 px-8 py-6 lg:px-10 lg:py-15 lg:flex-nowrap lg:gap-x-5">
+            <div>
+                <div class="flex justify-center items-center gap-3" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                    <h1 class="text-3xl font-bold text-blue-800 sm:text-4xl">99</h1>
+                    <h2 class="text-white font-bold text-xl sm:text-2xl">Success in getting happy customer</h2>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-center items-center gap-3" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                    <h1 class="text-3xl font-bold text-blue-800 sm:text-4xl">25</h1>
+                    <h2 class="text-white font-bold text-xl sm:text-2xl">
+                        Thousands of successful business</h2>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-center items-center gap-3" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                    <h1 class="text-3xl font-bold text-blue-800 sm:text-4xl">120</h1>
+                    <h2 class="text-white font-bold text-xl sm:text-2xl">Total clients who love HighTech</h2>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-center items-center gap-3" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                    <h1 class="text-3xl font-bold text-blue-800 sm:text-4xl">5</h1>
+                    <h2 class="text-white font-bold text-xl sm:text-2xl">
+                        Stars reviews given by satisfied clients</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Clients -->
+    <section>
+        <div class="text-center flex flex-col justify-center items-center relative">
+            <h5 class="text-xl text-blue-800 font-bold md:text-2xl" data-aos="fade-up">Our Testimonial</h5>
+            <h1 class="text-3xl font-bold px-3 sm:px-25 md:text-4xl lg:w-3xl" data-aos="fade-right">Our Client Saying!
+            </h1>
+        </div>
+        <div class="grid grid-cols-1 mt-20 mx-10 md:mx-20 md:grid-cols-2 lg:grid-cols-3" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+            <div class="border border-gray-300 p-10 bg-slate-200">
+                <div class="flex items-center gap-6">
+                    <img src="https://themewagon.github.io/HighTechIT/img/testimonial-4.jpg" alt="">
+                    <div class="flex flex-col gap-3">
+                        <h4 class="font-bold text-green-400 text-2xl">Client Name</h4>
+                        <p class="font-semibold text-gray-400">Profession</p>
+                        <div class="text-blue-800">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-gray-300 my-6">
+                <div>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum
+                        aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis
+                        quam mi.</p>
+                </div>
+            </div>
+            <div class="border border-gray-300 p-10">
+                <div class="flex items-center gap-6">
+                    <img src="https://themewagon.github.io/HighTechIT/img/testimonial-1.jpg" alt="">
+                    <div class="flex flex-col gap-3">
+                        <h4 class="font-bold text-green-400 text-2xl">Client Name</h4>
+                        <p class="font-semibold text-gray-400">Profession</p>
+                        <div class="text-blue-800">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-gray-300 my-6">
+                <div>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum
+                        aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis
+                        quam mi.</p>
+                </div>
+            </div>
+            <div class="border border-gray-300 p-10 bg-slate-200">
+                <div class="flex items-center gap-6">
+                    <img src="https://themewagon.github.io/HighTechIT/img/testimonial-2.jpg" alt="">
+                    <div class="flex flex-col gap-3">
+                        <h4 class="font-bold text-green-400 text-2xl">Client Name</h4>
+                        <p class="font-semibold text-gray-400">Profession</p>
+                        <div class="text-blue-800">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-gray-300 my-6">
+                <div>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum
+                        aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis
+                        quam mi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-3 mt-6 mb-20">
+            <div class="w-8 h-4 bg-blue-700 rounded-full cursor-pointer"></div>
+            <div class="w-4 h-4 bg-slate-300 rounded-full cursor-pointer"></div>
+            <div class="w-4 h-4 bg-slate-300 rounded-full cursor-pointer"></div>
+            <div class="w-4 h-4 bg-slate-300 rounded-full cursor-pointer"></div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section>
+        <div class="bg-black p-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-white text-3xl font-bold cursor-pointer" data-aos="fade-up">High
+                        <span class="text-green-600">Tech</span>
+                    </h1>
+                    <p class="text-white" data-aos="fade-down" data-aos-duration="1000">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Soluta facere
+                        delectus qui placeat
+                        inventore
+                        consectetur repellendus optio debitis.</p>
+                    <div class="text-blue-800 flex items-center gap-2">
+                        <div class="w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-green-400 transition-all duration-[.3s]"
+                            data-aos="fade-left">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-green-400 transition-all duration-[.3s]"
+                            data-aos="fade-left">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-green-400 transition-all duration-[.3s]"
+                            data-aos="fade-left">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] rounded-full bg-white flex items-center justify-center cursor-pointer hover:bg-green-400 transition-all duration-[.3s]"
+                            data-aos="fade-left">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white p-8" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="text-green-400 text-2xl font-bold cursor-pointer">Short Link</h2>
+                    <ul class="mt-6 flex flex-col gap-2">
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">About us</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Contact us</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Our Services</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Our Projects</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Latest Blog</li>
+                    </ul>
+                </div>
+                <div class="text-white p-8" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="text-green-400 text-2xl font-bold cursor-pointer">Help Link</h2>
+                    <ul class="mt-6 flex flex-col gap-2">
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Term Of use</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Privacy Policy</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Help</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">FAQs</li>
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">Contact
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-white p-8" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="text-green-400 text-2xl font-bold cursor-pointer">Contact Us</h2>
+                    <ul class="mt-6 flex flex-col gap-2">
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]">
+                            <i class="fa-solid fa-location-dot text-green-400"></i> 123 Street, New York, USA
+                        </li>
+                        <hr class="text-blue-600">
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]"> <i
+                                class="fa-solid fa-phone text-green-400"></i> +123 456 7890</li>
+                        <hr class="text-blue-600">
+                        <li class="cursor-pointer hover:translate-x-3 transition-all duration-[.4s]"> <i
+                                class="fa-solid fa-envelope text-green-400"></i> info@exmple.con
+                        </li>
+                        <hr class="text-blue-600">
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-gray-400">
+            <div class="grid grid-cols-1 mt-6 md:grid-cols-2">
+                <p class="text-white"><span class="text-green-400">&copy; Your Site Name,</span> All right reserved.</p>
+                <p class="text-white">Designed By <span class="text-green-400"><i><b>MUHAMMAD
+                                LUQMAN
+                                NASIR</b></i></span> Distributed By <span class="text-blue-600">ThemeWagon</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
